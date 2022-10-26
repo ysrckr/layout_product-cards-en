@@ -1,8 +1,9 @@
 :root {
   --color-primary: #060b35;
-  --color-secondary: #616070;
+  --color-secondary: #797886;
   --color-gray: #e5e5e5;
   --color-blue: #00acdc;
+  --color-alternative: #5a5e79;
 }
 
 *,
@@ -15,9 +16,10 @@ body {
   padding: 0;
 }
 
-body {
+* {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   color: var(--color-primary);
@@ -33,18 +35,27 @@ body {
   background-color: #fff;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
 .image-container > img {
   width: 160px;
   height: 134px;
   margin: 0 auto;
 }
 
+.description {
+  margin-bottom: 6px;
+}
+
 .title {
-  margin: 20px auto 5px;
+  margin: 25px auto 0;
   font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  color: var(--color-primary);
+  margin-bottom: 1px;
 }
 
 .subtitle {
@@ -52,7 +63,6 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
-  margin-bottom: 10px;
 }
 
 .rating {
@@ -68,23 +78,29 @@ body {
   font-weight: 400;
   text-align: right;
   line-height: 14px;
-  color: var(--color-secondary);
+  color: var(--color-alternative);
+  margin-bottom: 3px;
 }
 
 .stars {
   display: flex;
   align-items: center;
-  width: 50%;
-  margin-top: 14px;
-  margin-bottom: 15px;
+  width: 56.5%;
+  margin-top: 9px;
+  margin-bottom: 13px;
+  margin-left: 1px;
 }
 
 .star {
   background-image: url("./images/star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
+}
+
+.star:not(:last-child) {
+  margin-right: 6px;
 }
 
 .stars--4 > .star:nth-child(-n + 4) {
@@ -96,12 +112,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .price-title {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
   color: var(--color-secondary);
 }
@@ -117,14 +133,14 @@ body {
 .buy {
   width: 166px;
   height: 40px;
-  margin: 15px auto;
+  margin: 10px auto 5px;
 }
 
 .buy-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 80px;
+  padding: 12px 80px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -134,4 +150,11 @@ body {
   background-color: var(--color-blue);
   border-radius: 5px;
   text-transform: uppercase;
+}
+
+.buy-link:hover {
+  background-color: #fff;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 5px;
 }
