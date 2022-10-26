@@ -39,7 +39,7 @@ body {
 }
 
 .title {
-  margin: 20px auto;
+  margin: 20px auto 5px;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
@@ -51,5 +51,41 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
-  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reviews {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 14px;
+  color: var(--color-secondary);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: 14px;
+  margin-bottom: 15px;
+}
+
+.star {
+  background-image: url("./images/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.stars--4 > .star:nth-child(-n + 4) {
+  background-image: url("./images/star-active.svg");
 }
