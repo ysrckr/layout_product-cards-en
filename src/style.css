@@ -2,6 +2,7 @@
   --color-primary: #060b35;
   --color-secondary: #616070;
   --color-gray: #e5e5e5;
+  --color-blue: #00acdc;
 }
 
 *,
@@ -111,4 +112,26 @@ body {
   line-height: 18px;
   color: var(--color-primary);
   text-align: right;
+}
+
+.buy {
+  width: 166px;
+  height: 40px;
+  margin: 15px auto;
+}
+
+.buy-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 80px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--color-blue);
+  border-radius: 5px;
+  text-transform: uppercase;
 }
