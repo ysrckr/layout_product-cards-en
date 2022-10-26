@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 :root {
   --color-primary: #060b35;
-  --color-secondary: #797886;
+  --color-secondary: #616070;
   --color-gray: #e5e5e5;
   --color-blue: #00acdc;
   --color-alternative: #5a5e79;
@@ -39,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .image-container > img {
@@ -54,15 +56,21 @@ body {
 
 .title {
   margin: 25px auto 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  font-style: normal;
   font-size: 12px;
   margin-bottom: 1px;
 }
 
 .subtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: var(--color-secondary);
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
+  font-style: normal;
 }
 
 .rating {
@@ -74,11 +82,12 @@ body {
 }
 
 .reviews {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--color-primary);
   font-size: 10px;
   font-weight: 400;
-  text-align: right;
   line-height: 14px;
-  color: var(--color-alternative);
+  font-style: normal;
   margin-bottom: 3px;
 }
 
@@ -86,7 +95,7 @@ body {
   display: flex;
   align-items: center;
   width: 56.5%;
-  margin-top: 9px;
+  margin-top: 8px;
   margin-bottom: 13px;
   margin-left: 1px;
 }
@@ -112,20 +121,25 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 7px;
+  margin-top: 1px;
+  margin-bottom: 6px;
 }
 
 .price-title {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 18px;
+  font-style: normal;
   color: var(--color-secondary);
 }
 
 .price-value {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 14px;
+  font-style: normal;
   color: var(--color-primary);
   text-align: right;
 }
