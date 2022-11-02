@@ -84,6 +84,7 @@
   border: 1px solid transparent;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .card__link:hover {
