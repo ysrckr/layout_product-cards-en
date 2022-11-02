@@ -6,38 +6,30 @@
   background-color: #fff;
 }
 
-.card__image {
+.card__image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.card__image > img {
+.card__image {
   width: 160px;
   height: 134px;
   margin: 0 auto;
 }
 
 .card__description {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .card__title {
+  color: var(--color-primary);
   font-weight: 500;
   line-height: 18px;
   font-style: normal;
   font-size: 12px;
-  margin: 0;
-  margin-bottom: 2px;
-}
-
-.card__subtitle {
-  color: var(--color-secondary);
-  font-size: 10px;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
+  margin-bottom: 4px;
 }
 
 .card__rating {
@@ -45,16 +37,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .card__reviews {
   color: var(--color-primary);
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
-  font-style: normal;
-  margin: 0;
 }
 
 .card__price {
@@ -62,7 +49,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
 }
 
 .card__price-title {
